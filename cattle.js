@@ -16,4 +16,4 @@ const roundup = (herdSize = 0) => {
 
 module.exports = { roundup }
 
-roundup(10)
+

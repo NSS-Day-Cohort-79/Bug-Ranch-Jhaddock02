@@ -79,10 +79,14 @@ Your journey will take you through the wildness of the American Midwest and acro
 
    > The 'drovers' variable is used to call back to the 'drovers' array giving it access to the information of the drovers, so it will store the return values from hireDrovers().
 
+   // the value of the drovers variable is the return of the drovers empty array.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
 
    > This for(of) loop is used to itterate through the items of the 'drovers' array 
    and the value of 'drover' is used to look at each individual drover and see if it passes the peramiters. So 'drovers' gives access to the whole information of 'drovers' and 'drover' looks through each individual drover in the 'drovers' array
+
+//the for(of) loop is used to ittereate through the drovers array giving it acces to drover
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > [Your public Loom URL here](https://www.loom.com/share/8a0f7eac4a674470b37435aa33ef55ff)
@@ -96,12 +100,19 @@ Your journey will take you through the wildness of the American Midwest and acro
    Explain this code with your best vocabulary.
    > In this for(loop) we use let instead of consts to let the variable change of needed. the forestNumber is the condition in this loop and it is using the variable areas.forests to determine how many forests each journey will have. forestNumber++ adds 2 more forests to the previous determined outcome and in the .push function gives acces to the journey array and adds the "forest" string to it.
 
+   // you are first defining the forestNumber as 0, whilst still letting it have the ability to change value using let. you are then checking to see if the value is lower than the value of the river property of the areas Object.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
+
    > In the database the variable database is used as an object to hold the cattleTypes and drovers arrays. This object is then exported and imported throughout the chain of code giving access to is held information when needed.
+
+   //you are defining the object value of database with the cattleTypes and drovers array wich conatain their respected objects.
 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
 
    > in the drovers directory (herdSize) is used to define the size of the herd that is to be transported. All of the data that is used to define the size of each herd is in the cattle.js directory. It is called to using an export/import function and then has its value defined due to the different parameters.
+
+   // herSize is used to define the ammount of cattle and it gets its value from the return of the empty cattle array in the cattle.js directory
 
 ## When You Are Done
 
